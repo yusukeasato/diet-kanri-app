@@ -105,6 +105,9 @@ document.addEventListener('turbolinks:load', () => {
     from = maxDate(from, START_DATE)
     let to = minDate(TODAY, END_DATE)
     drawGraph(from, to)
+    // フォームの開始日・終了日を変更する
+    startCalendarFlatpickr.setDate(from)
+    endCalendarFlatpickr.setDate(to)
   }
 
   // 過去◯週間のグラフを描くボタン
