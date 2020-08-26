@@ -1,5 +1,9 @@
 document.addEventListener('turbolinks:load', () => {
 
+  // 「折れ線」グラフのデータ
+  let lineLabel = gon.chart_label
+  let lineData = gon.chart_data
+
   // カレンダーの表示
   flatpickr('#date-form')
   const TODAY = new Date(new Date().setHours(0, 0, 0, 0))
@@ -21,12 +25,8 @@ document.addEventListener('turbolinks:load', () => {
     // 選択できない日付
     disable: DISABLE_DATES
   })
-  // 折れ線グラフのデータ
-  let lineLabel = ['1/1', '1/2', '1/4', '1/5', '1/6', '1/7']
-  let lineData = [60.3, 61.1, 60.8, null, 60.5, 61.4]
 
   // 折れ線グラフのオプション
-
   const lineChartData = {
     labels: lineLabel,
     datasets: [{
