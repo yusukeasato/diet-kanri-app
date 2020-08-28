@@ -28,6 +28,6 @@
 
 ## 環境
 
-言語（ruby 2.6.5）
-フレームワーク（Rails 5.2.4.3）
-開発（Visual Studio Code）
+- 言語（ruby 2.6.5）
+- フレームワーク（Rails 5.2.4.3）
+- 開発（Visual Studio Code）
