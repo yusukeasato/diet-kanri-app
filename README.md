@@ -1,24 +1,30 @@
-# README
+# 体重を管理しよう
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## どのようなアプリか？
 
-Things you may want to cover:
+日々計測する体重を記録し、ダイエットなどにおいての体重の変化を可視化するアプリです。
 
-* Ruby version
+## 制作背景
 
-* System dependencies
+彼女がダイエットを頑張っているので,少しでも役に立てばいいなと思って制作しました。小数点単位の体重は覚えるのが大変で、なおかつどのくらいの変化が起きたのか認識しずらいと困っている所を見てこのアプリの制作に至りました。  
+体重の変化を細かく管理し、グラフで分かりやすく直感的に見る事ができるので、モチベーションの向上にもつながると考えています。
 
-* Configuration
+## 機能
 
-* Database creation
+- 日付ごとに体重を記録できる
+- 登録記録の修正・削除
+- 体重データをグラフ化（Chart.js）
+- グラフを指定した期間に変更できる（過去 1 週間、過去 2 週間、過去 1 ヶ月、過去 3 ヶ月） -ユーザー登録・ログイン機能（Devise）
+- bootstrap
 
-* Database initialization
+## 使い方
 
-* How to run the test suite
+1 アカウント作成（ゲストログイン機能付き）  
+2 日々の体重を記録する  
+3 自分の成長を見ながらモチベーションを意地し、ダイエットを継続する
 
-* Services (job queues, cache servers, search engines, etc.)
+## 環境
 
-* Deployment instructions
-
-* ...
+言語（ruby 2.6.5）
+フレームワーク（Rails 5.2.4.3）
+開発（Visual Studio Code）
